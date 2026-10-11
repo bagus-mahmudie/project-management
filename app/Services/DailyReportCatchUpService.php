@@ -3,8 +3,8 @@
 namespace App\Services;
 
 use App\Jobs\SyncDailyReportUserBatch;
-use App\Models\DailyReportSyncCursor;
 use App\Models\DailyReport;
+use App\Models\DailyReportSyncCursor;
 use App\Models\User;
 use Illuminate\Support\Carbon;
 
