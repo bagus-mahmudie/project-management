@@ -1,0 +1,11 @@
+includes:
+    - vendor/larastan/larastan/extension.neon
+
+parameters:
+    paths:
+        - app
+    level: 3
+    tmpDir: storage/framework/cache/phpstan
+    checkModelProperties: false
+    universalObjectCratesClasses:
+        - Illuminate\Database\Eloquent\Model

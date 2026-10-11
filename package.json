@@ -1,0 +1,36 @@
+{
+    "$schema": "https://www.schemastore.org/package.json",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "vite build",
+        "dev": "vite",
+        "lint": "eslint resources/js",
+        "format": "prettier --write resources/js",
+        "format:check": "prettier --check resources/js"
+    },
+    "devDependencies": {
+        "@eslint/js": "^10.0.1",
+        "@inertiajs/vue3": "^2.0.0",
+        "@tailwindcss/forms": "^0.5.3",
+        "@vitejs/plugin-vue": "^6.0.0",
+        "autoprefixer": "^10.4.12",
+        "axios": "^1.11.0",
+        "concurrently": "^9.0.1",
+        "eslint": "^10.8.1",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-vue": "^10.10.0",
+        "globals": "^17.10.0",
+        "laravel-vite-plugin": "^2.0.0",
+        "postcss": "^8.4.31",
+        "prettier": "^3.9.6",
+        "tailwindcss": "^3.2.1",
+        "vite": "^7.0.7",
+        "vue": "^3.4.0"
+    },
+    "dependencies": {
+        "apexcharts": "^5.16.0",
+        "bootstrap-icons": "^1.13.1",
+        "vue3-apexcharts": "^1.11.1"
+    }
+}

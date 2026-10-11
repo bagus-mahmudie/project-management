@@ -1,0 +1,169 @@
+@font-face {
+    font-family: "Lufga";
+    src: url("../../public/assets/fonts/lufga/Lufga-Thin.otf") format("opentype");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lufga";
+    src: url("../../public/assets/fonts/lufga/Lufga-ExtraLight.otf") format("opentype");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lufga";
+    src: url("../../public/assets/fonts/lufga/Lufga-Light.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lufga";
+    src: url("../../public/assets/fonts/lufga/Lufga-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lufga";
+    src: url("../../public/assets/fonts/lufga/Lufga-Medium.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lufga";
+    src: url("../../public/assets/fonts/lufga/Lufga-SemiBold.otf") format("opentype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lufga";
+    src: url("../../public/assets/fonts/lufga/Lufga-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lufga";
+    src: url("../../public/assets/fonts/lufga/Lufga-ExtraBold.otf") format("opentype");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lufga";
+    src: url("../../public/assets/fonts/lufga/Lufga-Black.otf") format("opentype");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.18) transparent;
+}
+
+*::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.18);
+    border-radius: 999px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.28);
+}
+
+html,
+body {
+    font-family: "Lufga", ui-sans-serif, system-ui, sans-serif;
+}
+#app {
+    min-height: 100%;
+    background: #1e1f23;
+}
+
+.inline-transparent-input,
+.inline-transparent-input:hover,
+.inline-transparent-input:focus,
+.inline-transparent-input:focus-visible,
+input.bg-transparent,
+input.bg-transparent:hover,
+input.bg-transparent:focus,
+input.bg-transparent:focus-visible,
+textarea.bg-transparent,
+textarea.bg-transparent:hover,
+textarea.bg-transparent:focus,
+textarea.bg-transparent:focus-visible,
+select.bg-transparent,
+select.bg-transparent:hover,
+select.bg-transparent:focus,
+select.bg-transparent:focus-visible {
+    border-color: transparent !important;
+    outline: none !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    --tw-ring-color: transparent !important;
+    --tw-ring-offset-color: transparent !important;
+    --tw-ring-shadow: 0 0 #0000 !important;
+    --tw-ring-offset-shadow: 0 0 #0000 !important;
+}
+
+.app-search-input:focus,
+.app-search-input:focus-visible {
+    border-color: #fff433 !important;
+    outline: none !important;
+    box-shadow: 0 0 0 1px #fff433 !important;
+    --tw-ring-color: #fff433 !important;
+    --tw-ring-offset-color: transparent !important;
+    --tw-ring-offset-shadow: 0 0 #0000 !important;
+}
+
+.auth-form-input:focus,
+.auth-form-input:focus-visible {
+    border-color: #fff433 !important;
+    outline: none !important;
+    box-shadow: 0 0 0 1px #fff433 !important;
+    --tw-ring-color: #fff433 !important;
+    --tw-ring-offset-color: transparent !important;
+    --tw-ring-shadow: 0 0 0 1px #fff433 !important;
+    --tw-ring-offset-shadow: 0 0 #0000 !important;
+}
+
+.app-modal input:focus,
+.app-modal input:focus-visible,
+.app-modal textarea:focus,
+.app-modal textarea:focus-visible,
+.app-modal select:focus,
+.app-modal select:focus-visible {
+    border-color: #fff433 !important;
+    outline: none !important;
+    box-shadow: 0 0 0 1px #fff433 !important;
+    --tw-ring-color: #fff433 !important;
+    --tw-ring-offset-color: transparent !important;
+    --tw-ring-shadow: 0 0 0 1px #fff433 !important;
+    --tw-ring-offset-shadow: 0 0 #0000 !important;
+}

@@ -1,0 +1,6 @@
+node_modules
+public/build
+bootstrap/ssr
+storage
+vendor
+
