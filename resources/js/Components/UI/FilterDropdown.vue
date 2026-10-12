@@ -64,7 +64,7 @@ onBeforeUnmount(() => document.removeEventListener('click', handleOutsideClick))
     <div ref="root" class="relative shrink-0">
         <button
             type="button"
-            class="flex h-10 min-w-[118px] items-center justify-between gap-4 rounded-xl border border-white/5 bg-white/5 px-4 text-sm text-white transition hover:border-white/15 hover:bg-white/[0.08]"
+            class="flex h-10 min-w-[118px] items-center justify-between gap-4 rounded-xl border border-white/5 bg-white/5 px-4 text-sm text-white transition hover:border-white/15 hover:bg-white/8"
             :aria-label="ariaLabel"
             :aria-expanded="isOpen"
             @click.stop="toggle"
@@ -85,10 +85,10 @@ onBeforeUnmount(() => document.removeEventListener('click', handleOutsideClick))
                 v-for="option in options"
                 :key="option.value"
                 type="button"
-                class="flex w-full items-center justify-between gap-3 rounded-lg px-3 py-2.5 text-left text-sm transition hover:bg-white/[0.08]"
+                class="flex w-full items-center justify-between gap-3 rounded-lg px-3 py-2.5 text-left text-sm transition hover:bg-white/8"
                 :class="
                     modelValue === option.value
-                        ? 'bg-white/[0.06] text-[#fff433]'
+                        ? 'bg-white/6 text-[#fff433]'
                         : 'text-white/70 hover:text-white'
                 "
                 @click="selectOption(option.value)"

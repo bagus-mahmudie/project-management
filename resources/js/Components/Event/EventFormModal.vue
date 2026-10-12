@@ -501,7 +501,7 @@ watch(
                                 :class="[
                                     item.currentMonth ? 'text-white' : 'text-white/25',
                                     isSelectedDate(item.date)
-                                        ? 'bg-[#fff433] !text-black'
+                                        ? 'bg-[#fff433] text-black!'
                                         : 'hover:bg-white/5',
                                 ]"
                                 @click="selectDate(item.date)"

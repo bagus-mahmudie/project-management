@@ -768,7 +768,7 @@ function avatarUrl(user) {
                             :class="
                                 selectedScheduleDate === date.date
                                     ? 'bg-white/10 text-white ring-1 ring-[#fff433]/50'
-                                    : 'bg-white/5 text-white/35 hover:bg-white/[0.08] hover:text-white/70'
+                                    : 'bg-white/5 text-white/35 hover:bg-white/8 hover:text-white/70'
                             "
                             @click="selectedScheduleDate = date.date"
                         >

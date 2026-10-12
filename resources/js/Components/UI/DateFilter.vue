@@ -336,7 +336,7 @@ onBeforeUnmount(() => document.removeEventListener('click', handleOutsideClick))
                     class="h-8 rounded-md transition"
                     :class="[
                         isSelectedDate(day.date)
-                            ? 'bg-[#fff433]  !text-black'
+                            ? 'bg-[#fff433]  text-black!'
                             : day.currentMonth
                               ? 'text-white hover:bg-white/10'
                               : 'text-white/25 hover:bg-white/10',

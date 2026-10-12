@@ -82,7 +82,7 @@ const approvalMessage = computed(() => page.props.flash?.approval_pending);
                     <input
                         v-model="form.terms"
                         type="checkbox"
-                        class="h-4 w-4 shrink-0 rounded border-white/20 bg-black/5 text-[#000] focus:ring-[#fff433] focus:ring-offset-0"
+                        class="h-4 w-4 shrink-0 rounded border-white/20 bg-black/5 text-black focus:ring-[#fff433] focus:ring-offset-0"
                     />
                     Remember me
                 </label>

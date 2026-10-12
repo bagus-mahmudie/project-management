@@ -225,7 +225,7 @@ function closeDetail() {
                     </div>
                 </div>
 
-                <div class="mx-3 my-3 h-[1px] bg-white/[0.055]"></div>
+                <div class="mx-3 my-3 h-px bg-white/5.5"></div>
 
                 <button
                     type="button"

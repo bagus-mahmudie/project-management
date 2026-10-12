@@ -236,7 +236,7 @@ const assigneeInitial = (user) => {
                                 class="flex h-8 w-8 items-center justify-center rounded-md"
                                 :class="
                                     isSelectedDate(item.date)
-                                        ? 'bg-[#fff433] font-medium !text-black'
+                                        ? 'bg-[#fff433] font-medium text-black!'
                                         : item.currentMonth
                                           ? 'text-white'
                                           : 'text-white/25'

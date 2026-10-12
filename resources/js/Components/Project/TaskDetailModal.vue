@@ -980,7 +980,7 @@ function formatRelativeTime(value) {
     <Teleport to="body">
         <div
             v-if="showFilePreview && activePreviewFile"
-            class="fixed inset-0 z-[9999] flex items-center justify-center bg-black/75 p-4"
+            class="fixed inset-0 z-9999 flex items-center justify-center bg-black/75 p-4"
             @click.self="closeFilePreview"
         >
             <div
@@ -1171,7 +1171,7 @@ function formatRelativeTime(value) {
     <Teleport to="body">
         <div
             v-if="showDeleteFileModal"
-            class="fixed inset-0 z-[10000] flex items-center justify-center bg-black/70 p-4"
+            class="fixed inset-0 z-10000 flex items-center justify-center bg-black/70 p-4"
         >
             <div
                 class="w-full max-w-md rounded-2xl border border-white/5 bg-[#1f2023] p-4 text-white shadow-2xl"
@@ -1208,7 +1208,7 @@ function formatRelativeTime(value) {
     <Teleport to="body">
         <div
             v-if="showUploadModal"
-            class="fixed inset-0 z-[10000] flex items-center justify-center bg-black/70 p-4"
+            class="fixed inset-0 z-10000 flex items-center justify-center bg-black/70 p-4"
             @click.self="closeUploadModal"
         >
             <div

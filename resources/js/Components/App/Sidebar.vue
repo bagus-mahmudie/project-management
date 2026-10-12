@@ -274,7 +274,7 @@ onUnmounted(() => {
                     :class="
                         isActivePath(item.href)
                             ? 'bg-white/[0.07] text-white'
-                            : 'text-white/35 hover:bg-white/[0.04] hover:text-white'
+                            : 'text-white/35 hover:bg-white/4 hover:text-white'
                     "
                     @click="closeMenus"
                 >
@@ -301,7 +301,7 @@ onUnmounted(() => {
 
                 <div v-show="projectOpen" class="mt-5 space-y-2.5">
                     <div
-                        class="max-h-[280px] space-y-2.5 overflow-y-auto pr-1 [scrollbar-width:thin] [scrollbar-color:rgba(255,255,255,.18)_transparent]"
+                        class="max-h-[280px] space-y-2.5 overflow-y-auto pr-1 scrollbar-thin [scrollbar-color:rgba(255,255,255,.18)_transparent]"
                     >
                         <button
                             type="button"
@@ -309,7 +309,7 @@ onUnmounted(() => {
                             :class="
                                 archiveOpen || activeArchivedProject
                                     ? 'bg-white/[0.07] text-white'
-                                    : 'text-white hover:bg-white/[0.04]'
+                                    : 'text-white hover:bg-white/4'
                             "
                             @click="
                                 archiveOpen = !archiveOpen;
@@ -347,7 +347,7 @@ onUnmounted(() => {
                                     :class="
                                         isProjectActive(project)
                                             ? 'bg-white/[0.07] text-white'
-                                            : 'text-white/80 hover:bg-white/[0.04] hover:text-white'
+                                            : 'text-white/80 hover:bg-white/4 hover:text-white'
                                     "
                                     @click="closeMenus"
                                 >
@@ -393,7 +393,7 @@ onUnmounted(() => {
                                 :class="
                                     isProjectActive(project)
                                         ? 'bg-white/[0.07] text-white'
-                                        : 'text-white hover:bg-white/[0.04]'
+                                        : 'text-white hover:bg-white/4'
                                 "
                                 @click="closeMenus"
                             >
@@ -428,7 +428,7 @@ onUnmounted(() => {
 
                     <button
                         type="button"
-                        class="flex h-12 w-full items-center gap-3 rounded-lg px-1 text-[15px] text-white hover:bg-white/[0.04]"
+                        class="flex h-12 w-full items-center gap-3 rounded-lg px-1 text-[15px] text-white hover:bg-white/4"
                         @click="emit('new-project')"
                     >
                         <span class="flex h-7 w-7 items-center justify-center">
@@ -442,7 +442,7 @@ onUnmounted(() => {
             <div ref="accountMenuRef" class="relative mt-auto pt-4">
                 <button
                     type="button"
-                    class="flex w-full items-center gap-3 rounded-xl border border-white/5 bg-white/[0.04] p-2 text-left hover:bg-white/[0.07]"
+                    class="flex w-full items-center gap-3 rounded-xl border border-white/5 bg-white/4 p-2 text-left hover:bg-white/[0.07]"
                     @click="toggleAccountMenu"
                 >
                     <div
@@ -516,7 +516,7 @@ onUnmounted(() => {
             <div
                 v-if="projectMenuId && selectedProject && isSuperAdmin"
                 ref="projectPopupRef"
-                class="fixed z-[9999] w-36 rounded-xl border border-white/10 bg-[#2a2b30] p-1 shadow-2xl"
+                class="fixed z-9999 w-36 rounded-xl border border-white/10 bg-[#2a2b30] p-1 shadow-2xl"
                 :style="{
                     top: `${projectMenuPosition.top}px`,
                     left: `${projectMenuPosition.left}px`,

@@ -60,7 +60,7 @@ function confirmRejectUser() {
 
             <div class="overflow-x-auto">
                 <table class="w-full min-w-[900px] text-left text-sm">
-                    <thead class="bg-white/[0.03] text-white/50">
+                    <thead class="bg-white/3 text-white/50">
                         <tr>
                             <th class="px-5 py-4">Name</th>
                             <th class="px-5 py-4">Email</th>

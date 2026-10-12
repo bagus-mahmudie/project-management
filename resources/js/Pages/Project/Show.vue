@@ -3029,7 +3029,7 @@ onUnmounted(() => {
                             <template v-for="task in tasksForGroup(group)" :key="task.id">
                                 <tr
                                     class="border-t border-white/10 bg-[#1E1F23]"
-                                    :class="isExpanded(task.id) ? 'bg-white/[0.02]' : ''"
+                                    :class="isExpanded(task.id) ? 'bg-white/2' : ''"
                                 >
                                     <td
                                         class="border-l border-b border-white/10 px-4 py-3 text-center align-middle"
@@ -3845,7 +3845,7 @@ onUnmounted(() => {
             <button
                 v-if="tab === 'table' && (can.update_project || isSuperAdmin)"
                 type="button"
-                class="fixed bottom-6 left-6 z-40 flex h-12 items-center gap-3 rounded-2xl border border-white/10 bg-[#1f2026] px-5 text-sm text-white hover:bg-[#2a2b30] lg:left-[calc(16rem+1.5rem)]"
+                class="fixed bottom-6 left-6 z-40 flex h-12 items-center gap-3 rounded-2xl border border-white/10 bg-[#1f2026] px-5 text-sm text-white hover:bg-[#2a2b30] lg:left-70"
                 @click="addFloatingGroup"
             >
                 <i class="bi bi-plus-lg"></i>
@@ -3872,7 +3872,7 @@ onUnmounted(() => {
         <Teleport to="body">
             <div
                 v-if="showTaskPermissionModal"
-                class="fixed inset-0 z-[10001] flex items-center justify-center bg-black/70 p-4"
+                class="fixed inset-0 z-10001 flex items-center justify-center bg-black/70 p-4"
                 @click.self="closeTaskPermissionModal"
             >
                 <div
@@ -3913,7 +3913,7 @@ onUnmounted(() => {
         <Teleport to="body">
             <div
                 v-if="showTableDeleteFileModal && tableFileToDelete"
-                class="fixed inset-0 z-[10000] flex items-center justify-center bg-black/70 p-4"
+                class="fixed inset-0 z-10000 flex items-center justify-center bg-black/70 p-4"
                 @click.self="closeTableDeleteFileModal"
             >
                 <div
@@ -3988,7 +3988,7 @@ onUnmounted(() => {
             <div
                 v-if="statusMenuId && statusMenuTask"
                 ref="statusMenuRef"
-                class="fixed z-[9999] max-h-[calc(100vh-16px)] w-44 overflow-y-auto rounded-xl border border-white/10 bg-[#2a2b30] p-2"
+                class="fixed z-9999 max-h-[calc(100vh-16px)] w-44 overflow-y-auto rounded-xl border border-white/10 bg-[#2a2b30] p-2"
                 :style="{
                     top: `${statusMenuPosition.top}px`,
                     left: `${statusMenuPosition.left}px`,
@@ -4011,7 +4011,7 @@ onUnmounted(() => {
             <div
                 v-if="timelineMenuId && timelineMenuTask"
                 ref="timelineMenuRef"
-                class="fixed z-[9999] max-h-[calc(100vh-16px)] w-[calc(100vw-16px)] max-w-[460px] overflow-y-auto rounded-xl border border-white/10 bg-[#1f2026] p-3"
+                class="fixed z-9999 max-h-[calc(100vh-16px)] w-[calc(100vw-16px)] max-w-[460px] overflow-y-auto rounded-xl border border-white/10 bg-[#1f2026] p-3"
                 :style="{
                     top: `${timelineMenuPosition.top}px`,
                     left: `${timelineMenuPosition.left}px`,
@@ -4118,7 +4118,7 @@ onUnmounted(() => {
         <Teleport to="body">
             <div
                 v-if="showParentLinksModal && parentLinksTask"
-                class="fixed inset-0 z-[9999] flex items-center justify-center bg-black/75 p-4"
+                class="fixed inset-0 z-9999 flex items-center justify-center bg-black/75 p-4"
                 @click.self="closeParentLinksModal"
             >
                 <div
@@ -4187,7 +4187,7 @@ onUnmounted(() => {
         <Teleport to="body">
             <div
                 v-if="showTableFilePreview && activeTablePreviewFile"
-                class="fixed inset-0 z-[9999] flex items-center justify-center bg-black/75 p-4"
+                class="fixed inset-0 z-9999 flex items-center justify-center bg-black/75 p-4"
                 @click.self="!showTableDeleteFileModal && closeTableFilePreview()"
             >
                 <div
@@ -4383,7 +4383,7 @@ onUnmounted(() => {
         <Teleport to="body">
             <div
                 v-if="showInviteModal && inviteTask"
-                class="fixed inset-0 z-[10000] flex items-center justify-center bg-black/70 p-4"
+                class="fixed inset-0 z-10000 flex items-center justify-center bg-black/70 p-4"
                 @click.self="closeInviteModal"
             >
                 <div

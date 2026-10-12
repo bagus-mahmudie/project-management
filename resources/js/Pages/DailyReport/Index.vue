@@ -2496,7 +2496,7 @@ onBeforeUnmount(() => {
                                                         >
                                                             <button
                                                                 type="button"
-                                                                class="inline-block min-w-0 max-w-[calc(100%_-_32px)] shrink cursor-pointer truncate text-left text-sm text-white transition hover:text-[#fff433]"
+                                                                class="inline-block min-w-0 max-w-[calc(100%-32px)] shrink cursor-pointer truncate text-left text-sm text-white transition hover:text-[#fff433]"
                                                                 :title="item.title"
                                                                 @click.stop="openTaskDetail(item)"
                                                             >
@@ -2576,7 +2576,7 @@ onBeforeUnmount(() => {
                                                         >
                                                             <button
                                                                 type="button"
-                                                                class="inline-block min-w-0 max-w-[calc(100%_-_32px)] shrink cursor-pointer truncate text-left text-sm text-white transition hover:text-[#fff433]"
+                                                                class="inline-block min-w-0 max-w-[calc(100%-32px)] shrink cursor-pointer truncate text-left text-sm text-white transition hover:text-[#fff433]"
                                                                 :title="item.title"
                                                                 @click.stop="openTaskDetail(item)"
                                                             >
@@ -2920,7 +2920,7 @@ onBeforeUnmount(() => {
                                                 !item.is_subtask &&
                                                 expandedSubtaskForms[item.id]
                                             "
-                                            class="border-t border-white/10 bg-white/[0.015]"
+                                            class="border-t border-white/10 bg-white/1.5"
                                         >
                                             <td class="border-r border-white/10" />
 
@@ -3014,7 +3014,7 @@ onBeforeUnmount(() => {
 
             <div
                 v-if="!normalizedReports.length"
-                class="rounded-2xl border border-dashed border-white/10 bg-white/[0.025] p-10 text-center"
+                class="rounded-2xl border border-dashed border-white/10 bg-white/2.5 p-10 text-center"
             >
                 <div class="text-white/40">
                     {{
@@ -3034,7 +3034,7 @@ onBeforeUnmount(() => {
         <Teleport to="body">
             <div
                 v-if="showSyncedLinksModal && syncedLinksItem"
-                class="fixed inset-0 z-[9999] flex items-center justify-center bg-black/75 p-4"
+                class="fixed inset-0 z-9999 flex items-center justify-center bg-black/75 p-4"
                 @click.self="closeSyncedLinksModal"
             >
                 <div
@@ -3102,7 +3102,7 @@ onBeforeUnmount(() => {
         <Teleport to="body">
             <div
                 v-if="showEvidencePreview && activeEvidenceFile"
-                class="fixed inset-0 z-[9999] flex items-center justify-center bg-black/75 p-4"
+                class="fixed inset-0 z-9999 flex items-center justify-center bg-black/75 p-4"
                 @click.self="!showEvidenceDeleteModal && closeEvidencePreview()"
             >
                 <div
@@ -3308,7 +3308,7 @@ onBeforeUnmount(() => {
         <Teleport to="body">
             <div
                 v-if="showEvidenceDeleteModal && evidenceFileToDelete"
-                class="fixed inset-0 z-[10000] flex items-center justify-center bg-black/70 p-4"
+                class="fixed inset-0 z-10000 flex items-center justify-center bg-black/70 p-4"
                 @click.self="closeEvidenceDeleteModal"
             >
                 <div
@@ -3379,7 +3379,7 @@ onBeforeUnmount(() => {
             <div
                 v-if="showUserFilter"
                 ref="userFilterMenu"
-                class="fixed z-[10000] overflow-hidden rounded-xl border border-white/10 bg-[#25262b] text-white shadow-2xl"
+                class="fixed z-10000 overflow-hidden rounded-xl border border-white/10 bg-[#25262b] text-white shadow-2xl"
                 :style="{
                     top: `${userFilterPosition.top}px`,
                     left: `${userFilterPosition.left}px`,
@@ -3409,7 +3409,7 @@ onBeforeUnmount(() => {
                         :key="user.id"
                         type="button"
                         class="flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-left transition hover:bg-white/[0.07]"
-                        :class="Number(selectedUserId) === Number(user.id) ? 'bg-white/[0.08]' : ''"
+                        :class="Number(selectedUserId) === Number(user.id) ? 'bg-white/8' : ''"
                         @click="changeUser(user)"
                     >
                         <div
@@ -3475,7 +3475,7 @@ onBeforeUnmount(() => {
             <div
                 v-if="statusMenuItemId && statusMenuItem"
                 ref="statusMenuRef"
-                class="fixed z-[9999] w-44 rounded-xl border border-white/10 bg-[#2a2b30] p-2"
+                class="fixed z-9999 w-44 rounded-xl border border-white/10 bg-[#2a2b30] p-2"
                 :style="{
                     top: `${statusMenuPosition.top}px`,
                     left: `${statusMenuPosition.left}px`,
@@ -3498,7 +3498,7 @@ onBeforeUnmount(() => {
             <div
                 v-if="dateMenuItemId && dateMenuItem"
                 ref="dateMenuRef"
-                class="fixed z-[9999] w-[calc(100vw-16px)] max-w-[340px] rounded-xl border border-white/10 bg-[#1f2026] p-3"
+                class="fixed z-9999 w-[calc(100vw-16px)] max-w-[340px] rounded-xl border border-white/10 bg-[#1f2026] p-3"
                 :style="{
                     top: `${dateMenuPosition.top}px`,
                     left: `${dateMenuPosition.left}px`,

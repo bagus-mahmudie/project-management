@@ -254,14 +254,14 @@ function assignmentIconStyle(assignment) {
         <div class="flex h-full min-h-0 flex-col bg-[#1d1e22]">
             <!-- Header -->
             <header
-                class="flex h-[54px] shrink-0 items-center justify-between border-b border-white/[0.04] px-3"
+                class="flex h-[54px] shrink-0 items-center justify-between border-b border-white/4 px-3"
             >
                 <h2 class="text-lg font-medium text-white/90">Detail Karyawan</h2>
 
                 <button
                     type="button"
                     aria-label="Tutup detail karyawan"
-                    class="flex h-8 w-8 items-center justify-center rounded-lg text-white/50 transition hover:bg-white/[0.06] hover:text-white"
+                    class="flex h-8 w-8 items-center justify-center rounded-lg text-white/50 transition hover:bg-white/6 hover:text-white"
                     @click="emit('close')"
                 >
                     <i class="bi bi-x-lg text-lg"></i>
@@ -333,7 +333,7 @@ function assignmentIconStyle(assignment) {
                 </div>
 
                 <!-- Contact -->
-                <div class="mt-3 overflow-hidden rounded-[10px] bg-white/[0.055]">
+                <div class="mt-3 overflow-hidden rounded-[10px] bg-white/5.5">
                     <div class="flex min-h-12 items-center gap-3 px-3 text-sm">
                         <i class="bi bi-telephone text-sm text-white/45"></i>
 
@@ -342,7 +342,7 @@ function assignmentIconStyle(assignment) {
                         </span>
                     </div>
 
-                    <div class="mx-3 h-px bg-white/[0.055]"></div>
+                    <div class="mx-3 h-px bg-white/5.5"></div>
 
                     <div class="flex min-h-12 items-center gap-3 px-3 text-sm">
                         <i class="bi bi-envelope text-sm text-white/45"></i>
@@ -365,7 +365,7 @@ function assignmentIconStyle(assignment) {
                             v-for="assignment in assignments"
                             :key="assignment.id"
                             :href="`/projects/${assignment.slug}`"
-                            class="group flex min-h-12 items-center rounded-[10px] bg-white/[0.055] px-2.5 transition hover:bg-white/[0.08]"
+                            class="group flex min-h-12 items-center rounded-[10px] bg-white/5.5 px-2.5 transition hover:bg-white/8"
                         >
                             <div
                                 class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full"
@@ -403,7 +403,7 @@ function assignmentIconStyle(assignment) {
 
                         <div
                             v-if="!assignments.length"
-                            class="rounded-[10px] border border-dashed border-white/[0.08] px-4 py-5 text-center text-sm text-white/30"
+                            class="rounded-[10px] border border-dashed border-white/8 px-4 py-5 text-center text-sm text-white/30"
                         >
                             Belum ada project yang ditugaskan.
                         </div>
@@ -418,7 +418,7 @@ function assignmentIconStyle(assignment) {
                         <div
                             v-for="activity in activities"
                             :key="activity.id"
-                            class="flex min-h-12 items-center gap-3 rounded-[10px] bg-white/[0.055] px-3"
+                            class="flex min-h-12 items-center gap-3 rounded-[10px] bg-white/5.5 px-3"
                         >
                             <p
                                 class="min-w-0 flex-1 truncate text-sm text-white/75"
@@ -437,7 +437,7 @@ function assignmentIconStyle(assignment) {
 
                         <div
                             v-if="!activities.length"
-                            class="rounded-[10px] border border-dashed border-white/[0.08] px-4 py-5 text-center text-sm text-white/30"
+                            class="rounded-[10px] border border-dashed border-white/8 px-4 py-5 text-center text-sm text-white/30"
                         >
                             Belum ada aktivitas terbaru.
                         </div>
