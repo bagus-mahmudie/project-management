@@ -4,6 +4,10 @@ Project management application with task assignment, team collaboration, a calen
 
 **Status:** Local development; a public demo is not yet available.
 
+## Preview
+
+[![Project Management Dashboard — application preview](docs/screenshots/project-preview.png)](docs/screenshots/project-preview.png)
+
 ## Features
 
 - Projects, team members, tasks, and status history
